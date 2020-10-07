@@ -22,13 +22,16 @@ let arrayOfTodos = [
     console.log(arrayOfTodos)
   }
 
+
   const populateTodos = () => {
-      console.log("Hi");
-      let node = document.createElement('li');
-      let textnode = document.createTextNode(arrayOfTodos[0].title);
-      node.appendChild(textnode);
-      document.getElementById('todo-list').appendChild(node);
+      for (let i = 0; i <= 200; i++) {
+      let myNode = document.createElement('li');
+      let myTextNode = document.createTextNode(arrayOfTodos[i].title);
+      myNode.appendChild(myTextNode);
+      document.getElementById('todo-list').appendChild(myNode);
   }
+}
+
 
 
 /* 
@@ -37,5 +40,6 @@ createElement to make a new LI
 createTextNode inside the li using the title property.
 Now append the text to the new element
 Then append the element to the ol element.
-Put all of that inside your populateTodos function.
+Put all of that in side your populateTodos function.
+Now that you have one element created and showing up on the screen, put the same code inside a for loop and iterate over the length of the array. But now just change out [0] for [i]! (Refer back to your for loop lesson if needed)
 */
