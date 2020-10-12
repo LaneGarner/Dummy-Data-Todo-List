@@ -1,7 +1,53 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
 .incomplete {
-    color: red;
+    color: tomato;
 }
 
 .complete {
-    color: green;
+    color: mediumseagreen;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #333;
+    margin-top: 40px;
+}
+
+button {
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    margin: 1em;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+button:nth-of-type(1) {
+    background: dodgerblue;
+    color: white;
+}
+
+button:nth-of-type(2) {
+    background: orange;
+    color: white;
+}
+
+button:nth-of-type(3) {
+    background: violet;
+    color: white;
+}
+
+li {
+    font-size: 20px;
+    text-align: center;
+    list-style-position: inside;
+}
+
+li::selection {
+    background: yellow;
 }
