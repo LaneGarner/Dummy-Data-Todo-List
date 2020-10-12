@@ -15,10 +15,12 @@
         <button onclick="logTodos()">Log Todos</button>
         <button onclick="populateTodos()">Populate Todos</button>
     </div>
-    <div>
-        <label for="user">User ID</label>
+    <div id="filter">
+        <label for="user">User ID: </label>
         <input type="number" id="user" min="1" max="10">
         <button onclick="findID()">Filter</button>
+        <button onclick="showComplete()">Completed</button>
+        <button onclick="showIncomplete()">Not Completed</button>
     </div>
     <ol id="todo-list">
     </ol>

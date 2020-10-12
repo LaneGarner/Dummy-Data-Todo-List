@@ -10,6 +10,14 @@
     color: mediumseagreen;
 }
 
+#incomplete {
+    color: tomato;
+}
+
+#complete {
+    color: mediumseagreen;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -50,4 +58,13 @@ li {
 
 li::selection {
     background: yellow;
+}
+
+#filter button {
+    font-size: 14px;
+    border-radius: 30px;
+}
+
+#filter label {
+    color: white;
 }
